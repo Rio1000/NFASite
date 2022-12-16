@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonfiction Articles - Compare and Contrast</title>
+    <link rel="stylesheet" href="productspage.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productgalery.css">
+    <link rel="stylesheet" href="ProductsDropDown.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/0809bdf578.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  <nav>
+		<h1>Nonfiction Articles - Cause and Effect</h1>
+		
+		
+		<img src="237-2372572_desktop-computer-clipart-black-and-white-clip-art-removebg-preview.png" alt="Squiffy Snail Logo" class="logo">
+		<div class="nav-icons">
+			<img src="ezgif.com-gif-maker-removebg-preview.png">
+		</div>
+	</nav>
+    <div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+		<aside class="sidebar">
+			<div class="menu">
+				<img src="237-2372572_desktop-computer-clipart-black-and-white-clip-art-removebg-preview.png">
+				<a href="index.html" class="menu-item">H O M E</a>
+				<button class="dropdown-btn menu-item">A R T I C L E S
+					<i class="fa fa-caret-down"></i>
+				  </button>
+				  <div class="dropdown-container">
+					<a href="CompareAndContrast.html" class="menu-item1">Compare & Contrast</a>
+					<a href="CauseandEffect.html" class="menu-item1 is-active">Cause and Effect</a>
+					<a href="ExplainAndDescribe.html" class="menu-item1">Explain & Describe</a>
+					<a href="ProblemAndSolution.html" class="menu-item1">Problem & Solution</a>
+					<a href="Sequance.html" class="menu-item1">Sequance</a>
+
+				  </div>
+				  <a href="mailto:73952@psdschools.org" target="_blank" class="menu-item"> C O N T A C T </a>
+				<a href="about.html" class="menu-item">A B O U T</a>
+				<a href="links.html" class="menu-item">L i n k s</a>
+				<a href="glossery.html" class="menu-item">G L O S S E R Y</a>
+
+				<br>
+			</div>
+		</aside>
+	</div>
+
+				
+
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	
+</script>
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+});
+} 
+</script>
+    <div class="col-2">
+        <div class="row row-2">
+        
+       </div>
+	    <div>
+            <div class="responsive">
+                <div class="gallery">
+                  <p class="ArticleBox">
+					<br>
+					<h1>Cause And Effect</h1>
+					<br>
+                    When 1997 - 1999 rolled around, people, programmers, and government officials started to worry about what will happen when their computers couldn't display the year 2000. This was a significant event that the public named The year 2000 problem, also known as the <b>y2k</b> problem, <b>y2k</b> scare, millennium bug, <b>y2k</b> bug, <b>y2k</b> glitch, <b>y2k</b> error, or simply <b>y2k</b>. This computer bug could have brought down worldwide infrastructures for industries ranging from banking to air travel because it would cause lots of flights to be incorrectly scheduled and cause a lot of problems in their computers. for banking it would make a lot of people's transactions, withdraws, depositing all incorrect, and very hard for the workers at the bank to know when people did these things. When programmers made the calendar, they represented four-digit years with only the final two digits, making the year 2000 indistinguishable from 1900. Instead of computers writing the year as 2000, they would write the year as 00. When they realized this they instantly went to try and add more bits (digits) to the calendar but were stopped when the computers ran out of memory to add the digits to the calendar because to add those digits they needed to. This bug caused the public very scared, causing individuals to anticipate a computer-induced apocalypse and causing them to stalk up on food, water, and other supplies to prepare for the new year and <b>y2k</b>. People were buying generators because they thought the power grids would go down due to computers not having the right date. This is why the <b>y2k</b> event was such a big problem and caused a lot of worries in the public. Watch out for 2038.
+                  </p>
+                </div>
+              </div>
+              
+              
+              
+              
+              <div class="clearfix"></div>
+	    </div>
+    </div>
+
+</body>
+</html>

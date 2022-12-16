@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonfiction Articles - Works Cited</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="ProductsDropDown.css">
+	<link rel="stylesheet" href="productgaleryforhomepage.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/0809bdf578.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+  <nav>
+		<h1>Nonfiction Articles - Works Cited</h1>
+		
+		
+		<img src="237-2372572_desktop-computer-clipart-black-and-white-clip-art-removebg-preview.png" alt="Squiffy Snail Logo" class="logo">
+		<div class="nav-icons">
+			<img src="ezgif.com-gif-maker-removebg-preview.png">
+		</div>
+	</nav>
+    <div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+    <aside class="sidebar">
+			<div class="menu">
+				<img src="/img/237-2372572_desktop-computer-clipart-black-and-white-clip-art-removebg-preview.png">
+				<a href="index.html" class="menu-item ">H O M E</a>
+				<button class="dropdown-btn menu-item">A R T I C L E S
+					<i class="fa fa-caret-down"></i>
+				  </button>
+				  <div class="dropdown-container">
+            <a href="CompareAndContrast.html" class="menu-item1">Compare & Contrast</a>
+            <a href="CauseandEffect.html" class="menu-item1">Cause and Effect</a>
+            <a href="ExplainAndDescribe.html" class="menu-item1">Explain & Describe</a>
+            <a href="ProblemAndSolution.html" class="menu-item1">Problem & Solution</a>
+			<a href="Sequance.html" class="menu-item1">Sequance</a>
+
+				  </div>
+				  <a href="mailto:73952@psdschools.org" target="_blank" class="menu-item"> C O N T A C T </a>
+				<a href="about.html" class="menu-item">A B O U T</a>
+				<a href="#" class="menu-item is-active">L i n k s</a>
+				<a href="glossery.html" class="menu-item">G L O S S E R Y</a>
+
+				<br>
+			</div>
+		</aside>
+	</div>
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	
+</script>
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+});
+} 
+</script>
+<div class="col-2">
+  <div class="AuthorInfo">
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+
+    <h1> Here are the like used to write these articles.</h1>
+	<a href="https://en.wikipedia.org/wiki/Year_2000_problem" class="link-item">Y2K Wiki</a>
+	<a href="https://en.wikipedia.org/wiki/Computer_hardware" class="link-item">Computer hardware Wiki</a>
+	<a href="https://en.wikipedia.org/wiki/Floppy_disk" class="link-item">Floppy disk wiki</a>
+	<a href="https://en.wikipedia.org/wiki/Computer_program class=" class="link-item">Computer program wiki</a>
+	<a href="https://en.wikipedia.org/wiki/Information_technology" class="link-item">IT wiki</a>
+	<a href="https://en.wikipedia.org/wiki/Personal_computer" class="link-item">Personal computer wiki</a>
+	<a href="https://en.wikipedia.org/wiki/Computer_graphics" class="link-item">Computergraphics wiki</a>
+	<a href="https://en.wikipedia.org/wiki/Computer_scientist" class="link-item">Computer scientist wiki</a>
+	<br>
+	<br>
+	<br>
+  </div>
+</div>
+
+<!--------------------------JS for Product Gallery------------------------------>
+<div class="FUNNYHAHABEER">
+ <h1><a href="https://www.mescanbrewery.com/"> TAR ÉIS Beoir </a></h1>
+ <h2><a href="https://www.apple.com/" id="apple">Buy A New Phone</a></h2>
+ <br>
+ <br>
+ <br>
+ <br>
+ <h5>thats not the translation</h5>
+</div>
+</body>
+</html>

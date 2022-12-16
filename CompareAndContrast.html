@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonfiction Articles - Compare and Contrast</title>
+    <link rel="stylesheet" href="productspage.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productgalery.css">
+    <link rel="stylesheet" href="ProductsDropDown.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/0809bdf578.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  <nav>
+		<h1>Nonfiction Articles - Compare and Contrast</h1>
+		
+		
+		<img src="237-2372572_desktop-computer-clipart-black-and-white-clip-art-removebg-preview.png" alt="Squiffy Snail Logo" class="logo">
+		<div class="nav-icons">
+			<img src="ezgif.com-gif-maker-removebg-preview.png">
+		</div>
+	</nav>
+    <div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+		<aside class="sidebar">
+			<div class="menu">
+				<img src="/img/237-2372572_desktop-computer-clipart-black-and-white-clip-art-removebg-preview.png">
+				<a href="index.html" class="menu-item">H O M E</a>
+				<button class="dropdown-btn menu-item">A R T I C L E S
+					<i class="fa fa-caret-down"></i>
+				  </button>
+				  <div class="dropdown-container">
+					<a href="CompareAndContrast.html" class="menu-item1 is-active">Compare & Contrast</a>
+					<a href="CauseandEffect.html" class="menu-item1">Cause and Effect</a>
+					<a href="ExplainAndDescribe.html" class="menu-item1">Explain & Describe</a>
+					<a href="ProblemAndSolution.html" class="menu-item1">Problem & Solution</a>
+					<a href="Sequance.html" class="menu-item1">Sequance</a>
+
+				  </div>
+				  <a href="mailto:rio1000222@gmail.com" target="_blank" class="menu-item"> C O N T A C T </a>
+				<a href="about.html" class="menu-item">A B O U T</a>
+				<a href="links.html" class="menu-item">L i n k s</a>
+				<a href="glossery.html" class="menu-item">G L O S S E R Y</a>
+
+				<br>
+			</div>
+		</aside>
+	</div>
+
+				
+
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	
+</script>
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+});
+} 
+</script>
+    <div class="col-2">
+        <div class="row row-2">
+        
+       </div>
+	    <div>
+            <div class="responsive">
+                <div class="gallery">
+                  <p class="ArticleBox">
+					<br>
+					<h1>Compare And Contrast</h1>
+					<br>
+                    Computers and Consoles are both very different ways to play games and access the internet. Since they both involve video games and browsing the internet, they are often compared to one another. Although there are many similarities, there are lots of important differences as well. For example, Both need a monitor To see what is on a computer or a console you need a separate TV or a monitor plugged into the device. Another example is, both run games, The console, and the computer both have been optimized in some ways to run high-quality videogames. The final example of similarity is both browse the internet.
+					Some differences between the Computer and the Console are The controls are different, The computer uses a keyboard and mouse but the consoles use a controller. Another difference is some games are only playable on the PC and others on the console. The final difference is Computers can do more outside of games, You can program on computers, There are infinitely more apps that are accessible on computers, and You can use emulators on computers to emulate different games that are not designed for the computer.
+
+                  </p>
+                </div>
+              </div>
+              
+              
+              
+              
+              <div class="clearfix"></div>
+	    </div>
+    </div>
+
+</body>
+</html>

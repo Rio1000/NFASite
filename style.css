@@ -1,0 +1,494 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+@font-face {
+	font-family: 'opendyslexic';
+	  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+	  font-style: normal;
+	  font-weight: normal;
+  } 
+  
+  @font-face {
+	  font-family: 'opendyslexic';
+	  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Italic.ttf');
+	  font-style: italic;
+	  font-weight: normal;
+  }
+  
+  @font-face {
+	  font-family: 'opendyslexic';
+	  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Bold.ttf');
+	  font-weight: bold;
+	  font-style: normal;
+  } 
+  
+  @font-face {
+	  font-family: 'opendyslexic';
+	  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-BoldItalic.ttf');
+	  font-weight: bold;
+	  font-style: italic;
+  } 
+  
+  @font-face {
+	  font-family: eulexia;
+	  src: url('http://dyslexicfonts.com/fonts/eulexia.ttf');
+  } 
+body {
+    background: #1e2227;
+}
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1e2227;
+    z-index:1;
+}
+nav h1{
+	color: rgb(30, 134, 186);
+	text-transform:uppercase;
+	font-weight: bold;
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
+.col-1, .col-2 {
+    flex-basis:50% ;
+    height: 90%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+	overflow: auto;
+}
+.col-2{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: -60%;
+    padding-top:20%;
+    position:relative;
+    margin-left: 30%;
+	display: flex;
+	overflow: hidden;
+
+}
+.feature-img{
+    width: 100%;
+    text-align: center;
+}
+.feature-img img{
+    width: 40%;
+    transition: rotate(-20deg);
+	
+}   
+
+/*------------------------------------------------------------*/
+
+.small-img-row{
+    display: flex;
+    width: 80%;
+    margin: 70px auto 0;
+    align-items: center;
+    justify-content: space-between;
+	margin-left: 14%;
+}
+.small-img{
+    
+    border-radius:10px;
+	margin-bottom: 30px;
+	
+}
+
+
+/*------------------------------------------------------------*/
+
+.subtitlebox{
+	margin-top:20%;
+}
+
+.title-for-home1{
+    position:relative;
+	color:#0044ff;
+    font-size:800%;
+    opacity: 0.3;
+	height: 90%;
+	left:1%;
+	text-transform: uppercase;
+	text-align: center;
+}
+.title-for-home2{
+    position:relative;
+	color:#0044ff;
+    font-size:30px;
+    opacity: 0.3;
+	left:1.5%;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+.title-for-home3{
+    position:relative;
+	color:#0044ff;
+    font-size:100px;
+    opacity: 0.3;
+	left:1%;
+	text-transform: uppercase;
+	text-align: center;
+
+
+}
+.logo{
+    width:50px;
+    cursor:pointer;
+   
+}
+.nav-icons img{
+    width: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+    
+.app {
+	display: flex;
+	min-height: 100vh;
+	padding-top: 120px;
+	margin-left:10%;
+}
+
+
+
+.sidebar {
+	flex: 1 1 0;
+	max-width: 300px;
+	padding: 2rem 1rem;
+	background:#1e2227;
+	position: relative;
+	margin-left: 0px;
+	
+
+}
+
+
+
+.sidebar .menu {
+	margin: 0 -1rem;
+}
+.menu img{
+	display:none;
+}
+
+.sidebar .menu .menu-item {
+	display: inline-block;
+	float:none;
+	padding: 1em;
+	background-color: #3369ff;
+    border:none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition:transform 0.5s;
+	width: 60%;
+	text-decoration: none;
+	overflow:hidden;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 8px 8px 8px #000000;
+	
+
+	
+}
+.menu-item:hover{
+	filter:brightness(0.7);
+	transform: scale(0.9,0.9);
+}
+  
+.menu .menu-item.is-active {
+	background-color: rgba(0, 255, 242, 0.645);
+	transform: scale(0.9,0.9);
+
+}
+.Socials-Buttons{
+	display: inline-block;
+	padding: 1em;
+	background-color: aqua;
+    border:none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition:transform 0.5s;
+	width: 11%;
+	text-decoration: none;
+	text-align: center;
+	
+}
+.Socials-Buttons:hover{
+	filter:brightness(0.7);
+    transform: translateX(5px);
+}
+
+
+.content {
+	flex: 1 1 0;
+	padding: 2rem;
+}
+
+.content h1 {
+	color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.content p {
+	color: #707793;
+}
+.FUNNYHAHABEER{
+	display: none;
+}
+Socials-Buttons{
+	width: 30px;
+	font-size: 7px;
+	
+}
+
+.AvatarImage{
+	width: 30%;
+	margin-top: 70px;
+	margin: 50px;
+	border-radius: 15%;
+	box-shadow: 8px 8px 16px #000000;
+	border-width: 10px;
+	border-style:solid;
+	border-color: rgb(64, 72, 131);
+}
+.AuthorInfo{
+	display: inline-block;
+	text-align: center;
+}
+.description{
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	margin-top: 20px;
+	width: 60%;
+	line-height: 50px;
+}
+.link-item{
+	display:inline-table;
+	margin: 20px;
+	float:none;
+	padding: 1em;
+	background-color: #e79a41;
+    border:none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    cursor: pointer;
+    transition:transform 0.25s;
+	width: 40%;
+	text-decoration: none;
+	overflow:hidden;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 8px 8px 8px #0000007e;
+	word-spacing: 10px;
+	letter-spacing: 4px;
+	
+}
+.link-item:hover{
+	filter:brightness(0.7);
+	transform: scale(0.97,0.97);
+}
+.glossery-item{
+	display:inline-table;
+	margin: 20px;
+	float:none;
+	padding: 1em;
+	background-color: #e494d0;
+    border:none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    transition:transform 0.25s;
+	width: 40%;
+	text-decoration: none;
+	overflow:hidden;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 8px 8px 8px #0000007e;
+	letter-spacing: 4px;
+}
+/*-------------------------------------------------------------------------*/
+@media (max-width: 1366px) {
+	.sidebar {
+		max-width: 190px;
+	}
+	.menu-item{
+		font-size: 10px;
+		width: 100%;
+	}
+	.menu{
+		width: 200%;
+	}
+	.Socials-Buttons:hover{
+		filter:brightness(0.7);
+		transform: translateY(5px);
+	}
+	.title-for-home1{
+		position:relative;
+		font-size:90px;
+		opacity: 0.3;
+		height: 90%;
+		left:1%;
+	}
+	.title-for-home2{
+		position:relative;
+		font-size:30px;
+		opacity: 0.3;
+		left:1.5%;
+	}
+	.title-for-home3{
+		position:relative;
+		font-size:90px;
+		opacity: 0.3;
+		left:1%;
+	}
+	.title-for-homepage{
+		margin-top: 60px;
+		
+	}
+	.logo{
+		width: 60px;
+	}
+	
+}
+
+@media (max-width: 768px) {
+
+	.content {
+		padding-top: 8rem;
+	}
+	
+	.sidebar {
+		max-width: 400px;
+	}
+	.Socials-Buttons{
+		position:absolute;
+		width: 50%;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	#Socials-Buttons1{
+		position:absolute;
+		width: 50%;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	#Socials-Buttons2{
+		position:absolute;
+		width: 50%;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	#Socials-Buttons3{
+		position:absolute;
+		width: 50%;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	#Socials-Buttons4{
+		position:absolute;
+		width: 50%;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	#Socials-Buttons5{
+		position:absolute;
+		width: 50%;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+
+	.menu-item{
+		width: 50%;
+	}
+	nav{
+		display: none;
+	}
+	nav img{
+		display:contents;
+		
+	}
+	.menu img{
+		display:block;
+		width:20%;
+		margin-left: 75%;
+	}
+	.shopping-bag{
+		width: 1%;
+		filter: invert;
+	}
+	.menu img{
+		filter:invert()
+	}
+	.small-img-row{
+		display:block;
+		margin-top: 100px;
+	}
+	.col-2{
+		display: none;
+	}
+	.menu-item{
+		margin-left:50%;
+	
+	}
+	
+	
+}
+@media (max-width: 300px) {
+	col-1{
+		display: none;
+	}
+	col-2{
+		display: none;
+	}
+	nav{
+		display:none;
+	}
+	.FUNNYHAHABEER{
+		display:block;
+		margin-top:-400px;
+		text-align: center;
+		color:white;
+	}
+	.sidebar{
+		display:none;
+	}
+	.sidebar.is-active{
+		display:none;
+		}
+	.menu-toggle{
+		display:none;
+	}
+}
